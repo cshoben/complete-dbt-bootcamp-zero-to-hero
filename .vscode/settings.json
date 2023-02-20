@@ -1,3 +1,6 @@
+"files.associations": {
+    "*.sql": "jinja-sql"
+},
 {
     "dbt.queryLimit": 500
 }
