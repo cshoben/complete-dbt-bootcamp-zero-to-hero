@@ -34,6 +34,7 @@ models:
           - positive_value
   
   - name: dim_hosts_cleansed
+    description: Cleansed table containing information about Airbnb hosts.
     columns:
       - name: host_id
         description: Primary key for hosts.
@@ -47,7 +48,7 @@ models:
           - not_null
       
       - name: is_superhost
-        description: If the host is a superhost, options are 't' or 'f'.
+        description: If host is a superhost, options are 't' or 'f'.
         tests:
           - accepted_values:
               values: ['t', 'f']
