@@ -1,0 +1,19 @@
+version: 2
+
+exposures:
+  - name: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://8b03f66d.us2a.app.preset.io/superset/dashboard/8/?native_filters_key=Wo3eoXVp9B5FF2xFZOdPxnedJEOuXs03r6Qu57D2VBhmmkeKvoc5nZ3M6Rzs1gzU
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+      - ref('fct_reviews')
+      - ref('dim_hosts_cleansed')
+
+    owner:
+      name: Chelsea Shoben
+      email: cshoben@gmail.com
